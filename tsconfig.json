@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "ESNext", // Use latest JS features
+        "module": "CommonJS", // Playwright supports CommonJS module system
+        "moduleResolution": "Node", // Resolve modules like Node.js
+        "baseUrl": ".", // Base folder for resolving non-relative imports
+        "paths": { // Optional path aliases for cleaner imports
+            "@tests/*": [
+                "tests/*"
+            ]
+        },
+        "strict": true, // Enables strict type-checking
+        "esModuleInterop": true, // Support importing commonjs modules
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true, // Skip type-checking of library declaration files
+        "outDir": "dist", // Output directory for compiled JS (optional if compiling manually)
+        "sourceMap": true // Generate source maps for debugging
+    },
+    "include": [
+        "tests/**/*.ts"
+    ] // Include test files here
+}
